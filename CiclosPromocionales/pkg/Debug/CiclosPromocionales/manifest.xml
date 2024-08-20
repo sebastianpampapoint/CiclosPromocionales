@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ed4a8433-96a7-4432-8e98-3311de1d044b" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="EPPlus.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="EPPlus.Interfaces.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="EPPlus.System.Drawing.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Microsoft.IO.RecyclableMemoryStream.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CiclosPromocionales.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CiclosPromocionales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d125eceac5c92719" Namespace="CiclosPromocionales.PanelCicloHome" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\CiclosPromocionales\PanelCicloHome\PanelCicloHomeUserControl.ascx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CicloPromocionalDetallePieza.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CicloPromocionalEnvioProveedor.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CicloPromocionalPiezas.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CicloPromocionalTareas.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CiclosPromocionales.css" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\CicloPromocionalAlta.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\ConfirmarEnvioProveedor.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\Cotizar.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\Procesando.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\TareasPendientes.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\TipoMaterialConfiguracion.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\TipoMaterialGuardar.aspx" />
+    <TemplateFile Location="Layouts\CiclosPromocionales\TipoMaterialListado.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="CiclosPromocionales_CiclosPromocionaeslFeature\Feature.xml" />
+    <FeatureManifest Location="CiclosPromocionales_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

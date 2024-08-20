@@ -1,0 +1,71 @@
+﻿body
+{
+}
+
+.divFormulario{
+    padding-bottom: 10px;
+}
+
+
+.lblTitulo{
+    font-style: italic;
+}
+
+.btnFormulario{
+    width: 180px;
+}
+
+.pnlEdicion {
+    border: solid;
+    border-color: forestgreen;
+    border-width: 2px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.ms-listviewtable{
+    width: 90%;
+}
+
+.div-table {
+    display: table;
+    width: 100%;
+    /*background-color: #eee;*/
+    /*border: 1px solid #666666;*/
+    border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.div-table-row {
+    display: table-row;
+    width: 100%;
+    clear: both;
+}
+
+.div-table-col-2 {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;
+    width: 20%;
+    /*background-color: #ccc;*/
+}
+
+.div-table-col-4 {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;
+    width: 40%;
+    /*background-color: #ccc;*/
+}
+
+.div-table-col-6 {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;
+    width: 60%;
+    /*background-color: #ccc;*/
+}
+
+.div-table-col-8 {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;
+    width: 80%;
+    /*background-color: #ccc;*/
+}

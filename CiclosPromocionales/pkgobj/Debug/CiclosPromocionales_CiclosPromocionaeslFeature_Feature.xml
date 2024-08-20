@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="7be037b3-3efe-4f1c-a319-a199e3e38a01" Scope="Web" Title="Ciclos Promocionales - Features Procesamiento">
+  <ElementManifests>
+    <ElementManifest Location="Procesar\Elements.xml" />
+  </ElementManifests>
+</Feature>

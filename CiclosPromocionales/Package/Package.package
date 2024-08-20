@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ed4a8433-96a7-4432-8e98-3311de1d044b" solutionId="ed4a8433-96a7-4432-8e98-3311de1d044b" resetWebServer="false" sharePointProductVersion="16.0" name="CiclosPromocionales" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="EPPlus.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EPPlus.6.0.3\lib\net452\EPPlus.dll" />
+    <customAssembly location="EPPlus.Interfaces.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EPPlus.Interfaces.6.0.0\lib\net452\EPPlus.Interfaces.dll" />
+    <customAssembly location="EPPlus.System.Drawing.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EPPlus.System.Drawing.6.0.0\lib\net452\EPPlus.System.Drawing.dll" />
+    <customAssembly location="Microsoft.IO.RecyclableMemoryStream.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="0eef37ba-d3ef-49fe-b907-505316814754" />
+    <featureReference itemId="62a82e1b-b119-4d60-915b-a54e4e9a18f8" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="287bc55a-ae58-43e7-bb2b-adb0d5b975bd" />
+  </projectItems>
+</package>

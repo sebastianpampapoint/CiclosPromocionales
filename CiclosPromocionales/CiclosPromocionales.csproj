@@ -1,0 +1,230 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{978750F7-200A-47D2-B5A0-E245A7777D31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CiclosPromocionales</RootNamespace>
+    <AssemblyName>CiclosPromocionales</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=6.0.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.0.3\lib\net452\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.0.0\lib\net452\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.0.0.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.0.0\lib\net452\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Funciones_Comunes.cs" />
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalAlta.aspx.cs">
+      <DependentUpon>CicloPromocionalAlta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalAlta.aspx.designer.cs">
+      <DependentUpon>CicloPromocionalAlta.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalDetallePieza.aspx.cs">
+      <DependentUpon>CicloPromocionalDetallePieza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalDetallePieza.aspx.designer.cs">
+      <DependentUpon>CicloPromocionalDetallePieza.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalEnvioProveedor.aspx.cs">
+      <DependentUpon>CicloPromocionalEnvioProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalEnvioProveedor.aspx.designer.cs">
+      <DependentUpon>CicloPromocionalEnvioProveedor.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalPiezas.aspx.cs">
+      <DependentUpon>CicloPromocionalPiezas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalPiezas.aspx.designer.cs">
+      <DependentUpon>CicloPromocionalPiezas.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalTareas.aspx.cs">
+      <DependentUpon>CicloPromocionalTareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\CicloPromocionalTareas.aspx.designer.cs">
+      <DependentUpon>CicloPromocionalTareas.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\ConfirmarEnvioProveedor.aspx.cs">
+      <DependentUpon>ConfirmarEnvioProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\ConfirmarEnvioProveedor.aspx.designer.cs">
+      <DependentUpon>ConfirmarEnvioProveedor.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\Cotizar.aspx.cs">
+      <DependentUpon>Cotizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\Cotizar.aspx.designer.cs">
+      <DependentUpon>Cotizar.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\Procesando.aspx.cs">
+      <DependentUpon>Procesando.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\Procesando.aspx.designer.cs">
+      <DependentUpon>Procesando.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TareasPendientes.aspx.cs">
+      <DependentUpon>TareasPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TareasPendientes.aspx.designer.cs">
+      <DependentUpon>TareasPendientes.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialConfiguracion.aspx.cs">
+      <DependentUpon>TipoMaterialConfiguracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialConfiguracion.aspx.designer.cs">
+      <DependentUpon>TipoMaterialConfiguracion.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialGuardar.aspx.cs">
+      <DependentUpon>TipoMaterialGuardar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialGuardar.aspx.designer.cs">
+      <DependentUpon>TipoMaterialGuardar.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialListado.aspx.cs">
+      <DependentUpon>TipoMaterialListado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\CiclosPromocionales\TipoMaterialListado.aspx.designer.cs">
+      <DependentUpon>TipoMaterialListado.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelCicloHome\PanelCicloHome.cs" />
+    <Compile Include="PanelCicloHome\PanelCicloHomeUserControl.ascx.cs">
+      <DependentUpon>PanelCicloHomeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelCicloHome\PanelCicloHomeUserControl.ascx.designer.cs">
+      <DependentUpon>PanelCicloHomeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesar\Procesar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Features\CiclosPromocionaeslFeature\CiclosPromocionaeslFeature.feature">
+      <FeatureId>{0eef37ba-d3ef-49fe-b907-505316814754}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{62a82e1b-b119-4d60-915b-a54e4e9a18f8}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{287bc55a-ae58-43e7-bb2b-adb0d5b975bd}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{ed4a8433-96a7-4432-8e98-3311de1d044b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PanelCicloHome\PanelCicloHome.webpart" />
+    <None Include="PanelCicloHome\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{778dbfa0-3720-434c-9f91-3b13f7e4146b}</SharePointProjectItemId>
+    </None>
+    <None Include="Procesar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{551d73c4-b993-4ef4-983d-75316471c034}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\CiclosPromocionaeslFeature\CiclosPromocionaeslFeature.Template.xml">
+      <DependentUpon>CiclosPromocionaeslFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\CiclosPromocionales\CicloPromocionalDetallePieza.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\CicloPromocionalEnvioProveedor.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\CicloPromocionalPiezas.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\CicloPromocionalTareas.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\CiclosPromocionales.css" />
+    <Content Include="Layouts\CiclosPromocionales\CicloPromocionalAlta.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\ConfirmarEnvioProveedor.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\Cotizar.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\Procesando.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\TareasPendientes.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\TipoMaterialConfiguracion.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\TipoMaterialGuardar.aspx" />
+    <Content Include="Layouts\CiclosPromocionales\TipoMaterialListado.aspx" />
+    <Content Include="PanelCicloHome\Elements.xml" />
+    <Content Include="PanelCicloHome\PanelCicloHomeUserControl.ascx" />
+    <Content Include="Procesar\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

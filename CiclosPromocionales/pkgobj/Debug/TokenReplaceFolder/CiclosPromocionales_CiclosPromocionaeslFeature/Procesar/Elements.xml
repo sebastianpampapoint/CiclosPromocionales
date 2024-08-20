@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="100">
+      <Receiver>
+        <Name>ProcesarItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>CiclosPromocionales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d125eceac5c92719</Assembly>
+        <Class>CiclosPromocionales.Procesar.Procesar</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ProcesarItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>CiclosPromocionales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d125eceac5c92719</Assembly>
+        <Class>CiclosPromocionales.Procesar.Procesar</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>
